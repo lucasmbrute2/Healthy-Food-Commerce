@@ -2,10 +2,10 @@ import food1 from "../../img/comida_1.svg"
 import food2 from "../../img/comida_2.svg"
 import food3 from "../../img/comida_3.svg"
 import food4 from "../../img/comida_4.svg"
-
+import "./BestRecipes.scss" 
 export default function BestRecipes(){
     return(
-        <div>
+        <div className='bestRecipes'>
             <div>
                 <h2>Our Best Recipes</h2>
                 <p>Far far away, behind the word mountains, far from the coutries</p>

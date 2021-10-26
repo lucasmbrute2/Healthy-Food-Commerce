@@ -1,3 +1,5 @@
+@import "../../styles/style.scss";
+@import "../../styles/font.scss";
 .memberShip{
     background: url('../../img/bloco_final_image.svg');
     background-repeat: no-repeat;
@@ -5,5 +7,34 @@
     background-size: 50% auto;
     height: 100vh;
 
+    &-container{
+        @include container;
+        display: flex;
+        flex-direction: column;
 
+        &-div{
+            margin-top: 250px ;
+            
+            &-h2{
+                color: #2d3561;
+                font-size: 35px;
+
+                font-weight: 700;
+            }
+        }
+    }
 }
+
+.page-container-div-input-submit{
+    padding: 1rem 1.9rem 1rem 1.9rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #badc58;
+    color: #fff;
+    @include font-poppins;
+    font-size: 1em;
+    -webkit-box-shadow: 1px 11px 13px 3px rgba(211,233,148,0.41); 
+    box-shadow: 1px 11px 13px 3px rgba(211,233,148,0.41);
+    cursor: pointer;
+}
+

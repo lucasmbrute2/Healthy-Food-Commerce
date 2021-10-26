@@ -1,5 +1,5 @@
 import "./Header.scss"
-
+import { Link } from "react-router-dom"
 export default function Header(){
     return(
         <div className='header'>
@@ -13,7 +13,9 @@ export default function Header(){
                             <li>HEALTHY RECIPES</li>
                             <li>BLOG</li>
                             <li>JOIN</li>
-                            <li id='li-register'>REGISTER</li>
+                            <Link to='/register' style={{ textDecoration: 'none' }}>
+                                <li id='li-register'>REGISTER</li>
+                            </Link>
                         </ul>
                     </nav>
                 </div>

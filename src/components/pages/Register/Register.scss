@@ -12,8 +12,8 @@
         border-bottom: 2px solid black;
         
         &-div{
-            margin-top: 10px ;
-            margin-bottom: 89px;
+            
+            margin-bottom: 21px;
             padding: 3rem;
             border-radius: 30px;
             &-h1{
@@ -63,4 +63,10 @@ form{
         color: #fff;
     }
     
+}
+#register-back{
+    padding: 3rem;
+    padding-bottom: 0;
+    font-size: 30px;
+    color: #fff;
 }

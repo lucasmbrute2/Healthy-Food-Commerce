@@ -1,7 +1,7 @@
 import "./Register.scss"
 import { useState } from "react"
 import { Link } from "react-router-dom"
-export default function Register(){
+export default function Register(props){
     
     const [cepComplete,setCepComplete] = useState('')
     
@@ -26,7 +26,7 @@ export default function Register(){
         localStorage.setItem('bairro',bairro)
         localStorage.setItem('uf',uf)
         
-
+        props.history.push('/')
     }
 
     const dispatchCep = async (e)=>{
@@ -46,6 +46,9 @@ export default function Register(){
     
     return(
         <div className='register'>
+                <Link to='/'>
+                    <i class="fas fa-arrow-left" id='register-back'></i>
+                </Link>
             <div className='register-container'>
                 <div className='register-container-div'>
                     <div>
@@ -77,18 +80,16 @@ export default function Register(){
                                 <input placeholder='Complemento'  required name='complemento' className='register-container-div-box-input'></input>
                             </div>  
                             <div className='register-container-div-box'>
-                                <input placeholder='Bairro' value={cepComplete.bairro} required name='bairro ' className='register-container-div-box-input'></input>
+                                <input placeholder='Bairro' value={cepComplete.bairro} required name='bairro' className='register-container-div-box-input'></input>
                             </div>  
 
                             <div className='register-container-div-box'>
                                 <input placeholder='UF' value={cepComplete.uf} name='uf' className='register-container-div-box-input' required></input>
                             </div>  
-
-                            <Link to='/'>
                                 <div>
                                     <input type='submit'value='Enviar' className='register-container-div-box-input' id='input-submit' required></input>
                                 </div>
-                            </Link>
+
                         </form>
                     </div>  
                 </div>  

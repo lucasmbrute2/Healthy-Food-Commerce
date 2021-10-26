@@ -45,47 +45,49 @@ export default function Register(){
         <div className='register'>
             <div className='register-container'>
                 <div className='register-container-div'>
-                        <h1>Register</h1>
-                </div>  
-                <div>
-                    <form onSubmit={HandleSubmit}>
-                        <div>
-                            <input placeholder='Nome' required name='nome'></input>
-                        </div>    
-                        
-                        <div>
-                            <input placeholder='Data de Nascimento' required name='nascimento'></input>
-                        </div>    
-                        
-                        <div>
-                            <input placeholder='CPF' required name='cpf'></input>
-                        </div>    
-                        
-                        <div>
-                            <input placeholder='CEP' onBlur={dispatchCep} name='cep' required name='cep'></input>
-                        </div>    
-
-                        <div>
-                            <input placeholder='Logradouro' value={cepComplete.logradouro} required name='logradouro'></input>
-                        </div>  
-
-                        <div>
-                            <input placeholder='Complemento'  required name='complemento'></input>
-                        </div>  
-                        <div>
-                            <input placeholder='Bairro' value={cepComplete.bairro} required name='bairro'></input>
-                        </div>  
-
-                        <div>
-                            <input placeholder='UF' value={cepComplete.uf} required name='uf'></input>
-                        </div>  
-
-                        <Link to='/'>
+                    <div>
+                        <form onSubmit={HandleSubmit}>
                             <div>
-                                <input type='submit'value='Enviar'></input>
+                                <h1 className='register-container-div-h1'>Register</h1>
                             </div>
-                        </Link>
-                    </form>
+                            <div className='register-container-div-box'>
+                                <input placeholder='Nome' required name='nome' className='register-container-div-box-input'></input>
+                            </div>    
+                            
+                            <div className='register-container-div-box'>
+                                <input placeholder='Data de Nascimento' required name='nascimento' className='register-container-div-box-input'></input>
+                            </div>    
+                            
+                            <div className='register-container-div-box'>
+                                <input placeholder='CPF' required name='cpf' className='register-container-div-box-input'></input>
+                            </div>    
+                            
+                            <div className='register-container-div-box'>
+                                <input placeholder='CEP' onBlur={dispatchCep} name='cep' required name='cep' className='register-container-div-box-input'></input>
+                            </div>    
+
+                            <div className='register-container-div-box'>
+                                <input placeholder='Logradouro' value={cepComplete.logradouro} required name='logradouro' className='register-container-div-box-input'></input>
+                            </div>  
+
+                            <div className='register-container-div-box'>
+                                <input placeholder='Complemento'  required name='complemento' className='register-container-div-box-input'></input>
+                            </div>  
+                            <div className='register-container-div-box'>
+                                <input placeholder='Bairro' value={cepComplete.bairro} required name='bairro ' className='register-container-div-box-input'></input>
+                            </div>  
+
+                            <div className='register-container-div-box'>
+                                <input placeholder='UF' value={cepComplete.uf} required name='uf' className='register-container-div-box-input'></input>
+                            </div>  
+
+                            <Link to='/'>
+                                <div>
+                                    <input type='submit'value='Enviar' className='register-container-div-box-input' id='input-submit'></input>
+                                </div>
+                            </Link>
+                        </form>
+                    </div>  
                 </div>  
             </div>
         </div>

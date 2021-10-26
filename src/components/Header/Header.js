@@ -17,7 +17,20 @@ export default function Header(){
                         </ul>
                     </nav>
                 </div>
+
             </div>  
+            <div className='page-container'>
+                <div className='page-container-div'>
+                    <h2 className='page-container-div-h2'>Ready for</h2>
+                    <h2 className='page-container-div-h2'>Trying a new</h2>
+                    <h2 className='page-container-div-h2'>recipe?</h2>
+                </div>
+                
+                <div className='page-container-div'>
+                    <input placeholder='Search healthy recipes' className='page-container-div-input'></input>
+                    <i class="fas fa-search" id='icon-search'></i>
+                </div>
+            </div>
         </div>
     )
 }

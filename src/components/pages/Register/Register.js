@@ -31,11 +31,14 @@ export default function Register(){
 
     const dispatchCep = async (e)=>{
         const { value } = e.target
-        if (value?.length !==8){
+        
+        const replacedCep = value?.replace(/[^0-9]/g,"")
+        
+        if (replacedCep?.length !==8){
             return
         }
         
-        const response = await fetch(`https://viacep.com.br/ws/${value}/json/`)
+        const response = await fetch(`https://viacep.com.br/ws/${replacedCep}/json/`)
         const result = await response.json()
         setCepComplete(result)
     }
@@ -51,7 +54,7 @@ export default function Register(){
                                 <h1 className='register-container-div-h1'>Register</h1>
                             </div>
                             <div className='register-container-div-box'>
-                                <input placeholder='Nome' required name='nome' className='register-container-div-box-input'></input>
+                                <input placeholder='Nome'  name='nome' className='register-container-div-box-input' required></input>
                             </div>    
                             
                             <div className='register-container-div-box'>
@@ -78,12 +81,12 @@ export default function Register(){
                             </div>  
 
                             <div className='register-container-div-box'>
-                                <input placeholder='UF' value={cepComplete.uf} required name='uf' className='register-container-div-box-input'></input>
+                                <input placeholder='UF' value={cepComplete.uf} name='uf' className='register-container-div-box-input' required></input>
                             </div>  
 
                             <Link to='/'>
                                 <div>
-                                    <input type='submit'value='Enviar' className='register-container-div-box-input' id='input-submit'></input>
+                                    <input type='submit'value='Enviar' className='register-container-div-box-input' id='input-submit' required></input>
                                 </div>
                             </Link>
                         </form>

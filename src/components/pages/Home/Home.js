@@ -5,8 +5,8 @@ import Header from "../../Header/Header";
 import MemberShip from "../../MemberShip/MemberShip";
 import ReadOurBlog from "../../ReadOurBlog/ReadOurBlog";
 import Services from "../../Services/Services";
+import "./Home.scss"
 
-import "./Home.css"
 export default function Home(){
     return(
         <div className='home'>

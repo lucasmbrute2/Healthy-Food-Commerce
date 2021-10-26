@@ -12,7 +12,7 @@ export default function BestRecipes(){
                 <p className='bestRecipes-title-p'>Far far away, behind the word mountains, far from the coutries</p>
                 <p className='bestRecipes-title-p bestRecipes-title-p-bottom '>Vokalia and Consonantia, there live the blind texts.</p>
             </div>
-            <div className='bestRecipes-container'>
+            <div className='bestRecipes-container' style={{ margin:'0 auto'}}>
                 <div className='bestRecipes-container-div'>
                     <div className='bestRecipes-container-div-img'>
                         <img src={food1} alt='Food' className='teste-img'/>

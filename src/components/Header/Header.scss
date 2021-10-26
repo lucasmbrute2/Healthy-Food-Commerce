@@ -1,0 +1,55 @@
+@import "../../styles/style.scss";
+
+.header{
+    background: url('../../img/Illustration.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 55% auto;
+    height: 100vh;
+    
+//---LOGO---
+
+    &-container{
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &-logo{
+
+            &-h1{
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                color: rgb(105, 212, 99);
+            }
+        }
+    }
+}
+
+//--LISTA DE ITENS--
+
+.header-container-list{
+    margin-top: 15px;
+    &-nav{
+        
+        &-ul{
+            display: flex;
+            list-style: none;
+            
+        }
+    }
+}
+li{
+    padding: .9rem 2rem .8rem 2rem;
+    font-size: 1.2em;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+#li-register{
+    color: rgb(105, 212, 99);
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}

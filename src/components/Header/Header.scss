@@ -1,5 +1,5 @@
 @import "../../styles/style.scss";
-
+@import "../../styles/font.scss";
 .header{
     background: url('../../img/Illustration.svg');
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
         &-logo{
 
             &-h1{
-                font-family: 'Poppins', sans-serif;
+                @include font-poppins;
                 font-size: 30px;
                 color: #badc58;
             }
@@ -43,7 +43,7 @@ li{
     padding: .9rem 2rem .8rem 2rem;
     font-size: 1.2em;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    @include font-poppins;
     font-weight: 500;
 }
 #li-register{
@@ -69,7 +69,7 @@ li{
             width: 325px;
             border-radius: 5px;
             border: 1.5px solid #1d164d;
-            font-family: 'Poppins', sans-serif;
+            @include font-poppins;
             margin-right: 25px;
             
             &:focus{
@@ -81,7 +81,7 @@ li{
         &-h2{
             font-size: 3em;
             color: rgb(24, 11, 82);
-            font-family: 'Poppins', sans-serif;
+            @include font-poppins;
             font-weight: 600;
             line-height: .9em;
             

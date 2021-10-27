@@ -5,8 +5,8 @@
     background-color: #fafafc;
 
     //===ESTILIZAÇÃO DO TÍTULO=====    
+    border: 2px solid rgba(255, 255, 255, 0);  //borda utilizada para definir os espaço da div
     
-    border: 2px solid rgba(255, 255, 255, 0); 
     &-title{
         text-align: center;
         
@@ -24,6 +24,29 @@
                 margin: .7rem auto;
                 
             }
+        }
+    }
+}
+
+.carousel{
+    margin: 5rem auto;
+    border-radius: 8px;
+    
+    &-div{
+        width: 300px;
+        text-align: center;
+        background-color: #ffffff;
+        border: 2px solid rgba(255, 255, 255, 0);
+
+        &-img{
+           width: 100%;
+        }
+        
+        &-p{
+            color: #1d164d;
+            @include font-poppins;
+
+            font-style: normal;
         }
     }
 }

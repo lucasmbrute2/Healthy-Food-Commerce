@@ -10,8 +10,20 @@ import food4 from "../../img/bloco_image_4.svg"
 export default function ReadOurBlog(){
 
     return(
-        <div >
-            <Carousel
+        <div className='readOurBlog' >
+            <div style={{ marginTop: '3rem' }}>
+
+
+            <div className='readOurBlog-title' >
+                    <h2 className='readOurBlog-title-h2'>
+                        Read Our Blog
+                    </h2>
+                <p className='readOurBlog-title-p'>Far far away, behind the word mountains,  far from the countries </p>
+                <p className='readOurBlog-title-p readOurBlog-title-p-bottom'>Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+                
+        
+            <Carousel className='carousel'
             showThumbs = {false}
             width='30%'
             infiniteLoop = {true}
@@ -19,24 +31,25 @@ export default function ReadOurBlog(){
             showIndicators= {false}
             
             >
-            <div>
+            <div className='carousel-div'>
                 <img src={food1} alt='food'/>
                 <p>Quick-start guide<br/>to nuts and seeds</p>
             </div>
-            <div>
+            <div className='carousel-div'>
                 <img src={food2} alt='food'/>
                 <p>Quick-start guide<br/>to nuts and seeds</p>
             </div>
-            <div>
+            <div className='carousel-div'>
                 <img src={food3} alt='food'/>
                 <p>Quick-start guide<br/>to nuts and seeds</p>
             </div>
-            <div>
+            <div className='carousel-div'>
                 <img src={food4} alt='food'/>
                 <p>Quick-start guide<br/>to nuts and seeds</p>
             </div>
             
             </Carousel>
+        </div>
         </div>
     ) 
 }

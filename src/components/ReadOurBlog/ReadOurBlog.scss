@@ -1,0 +1,30 @@
+@import '../../styles/font.scss';
+@import '../../styles/style.scss';
+
+.readOurBlog{
+    background-color: #fafafc;
+
+    //===ESTILIZAÇÃO DO TÍTULO=====    
+    
+    border: 2px solid rgba(255, 255, 255, 0); 
+    &-title{
+        text-align: center;
+        
+        &-h2{
+            color: #1d164d;
+            font-size: 30px;
+            margin-top: 0;
+
+        }   
+        
+        &-p{
+            color: #9e9baf;
+            margin: 0;
+            &-bottom{
+                margin: .7rem auto;
+                
+            }
+        }
+    }
+}
+

@@ -45,7 +45,7 @@ export default function ReadOurBlog(){
                 responsive={responsive}
                 swipeable={true}
                 draggable={false}
-                infinite={true}              
+           
                 
                 >
                 <div className='carousel-div'>

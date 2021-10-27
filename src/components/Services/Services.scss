@@ -78,13 +78,15 @@
         height: 500px;
 
         &-container-div{
-            margin: 75px auto;
+            width: 100%;
         
             &-h2{
                 text-align: center;
-            
+                display: flex;
+                flex-wrap: wrap;
                 &-p{
                     font-size: 15px;
+
                 }
             }
         }

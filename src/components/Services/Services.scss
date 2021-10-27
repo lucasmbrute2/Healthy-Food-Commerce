@@ -23,6 +23,7 @@
                 &-p{
                     color:#bcbcbc;
                     @include font-poppins;
+
                 }
             }
             
@@ -43,4 +44,50 @@
     -webkit-box-shadow: 1px 11px 13px 3px rgba(211,233,148,0.41); 
     box-shadow: 1px 11px 13px 3px rgba(211,233,148,0.41);
     cursor: pointer;
+}
+
+@media (max-width: 1300px){
+
+    .services{
+
+        &-container{
+
+            &-div{
+
+                margin: 0 25px 0 0 ;
+
+                &-h2{
+                    font-size: 25px;
+                    &-p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    #button-knowMore{
+        padding: .5rem 1rem .5rem 1rem;
+    }
+}
+
+@media(max-width: 840px){
+
+    .services{
+        background: url("");
+        height: 500px;
+
+        &-container-div{
+            margin: 75px auto;
+        
+            &-h2{
+                text-align: center;
+            
+                &-p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
 }

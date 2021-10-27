@@ -20,19 +20,19 @@ export default function ReadOurBlog(){
             
             >
             <div>
-                <img src={food1}/>
+                <img src={food1} alt='food'/>
                 <p>Quick-start guide<br/>to nuts and seeds</p>
             </div>
             <div>
-                <img src={food2}/>
+                <img src={food2} alt='food'/>
                 <p>Quick-start guide<br/>to nuts and seeds</p>
             </div>
             <div>
-                <img src={food3}/>
+                <img src={food3} alt='food'/>
                 <p>Quick-start guide<br/>to nuts and seeds</p>
             </div>
             <div>
-                <img src={food4}/>
+                <img src={food4} alt='food'/>
                 <p>Quick-start guide<br/>to nuts and seeds</p>
             </div>
             

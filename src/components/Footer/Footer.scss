@@ -22,3 +22,9 @@
     }
 }
 
+@media (max-width: 1100px){
+    .footer{
+        @include container-mobile;
+        display: flex;
+    }
+}

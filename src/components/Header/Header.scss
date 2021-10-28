@@ -10,7 +10,7 @@
 //---LOGO---
 
     &-container{
-        @include container;
+       
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -131,8 +131,20 @@ li{
         display: block;
         margin: 0 auto;
         text-align: center;
+
     }
     #icon-search{
         margin-top: 25px;
     }    
+}
+
+@media (max-width: 500px){
+    .header{
+        @include container-mobile;
+    }
+    .page-container-div-input{
+        
+        width: 100%;
+
+    }
 }

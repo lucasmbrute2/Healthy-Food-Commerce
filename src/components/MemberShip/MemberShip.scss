@@ -38,3 +38,13 @@
     cursor: pointer;
 }
 
+
+@media (max-width: 700px){
+    .memberShip{
+        @include container-mobile;
+        background: url("");
+    }
+    .page-container-div-input{
+        margin-right: 0;
+    }
+}

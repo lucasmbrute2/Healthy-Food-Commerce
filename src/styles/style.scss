@@ -4,3 +4,9 @@
     display: block;
     margin: 0 auto;
 }
+
+@mixin container-mobile{
+    max-width: calc(100% - 35px);
+    display: block;
+    margin: 0 auto;
+}

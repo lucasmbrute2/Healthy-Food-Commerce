@@ -43,10 +43,20 @@
     .memberShip{
         @include container-mobile;
         background: url("");
+        height: 50%;
+    
+        &-container-div{
+            margin-top: 50px;
+            margin-bottom: 30px;
+        
+            &-h2{
+                font-size: 30px;
+            }
+        }
     }
     .page-container-div-input{
         margin-right: 0;
-        
+
         &-submit{
             margin-top: 2rem;
         }

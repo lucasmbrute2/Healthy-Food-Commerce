@@ -9,7 +9,7 @@ export default function MemberShip(){
                     Join our membership <br/>to get special offer
                     </h2>
                 </div>
-                <div>
+                <div style= {{ marginBottom:'70px' }}>
                     <input placeholder='Enter your email address' className='page-container-div-input'></input>
                     <input type='submit' value='Join'className='page-container-div-input-submit' ></input>
                 </div>

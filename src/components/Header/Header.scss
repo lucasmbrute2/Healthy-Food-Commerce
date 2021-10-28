@@ -60,9 +60,10 @@ li{
     @include container;
     display: flex;
     flex-direction: column;
-    margin-top: 220px;
+    margin-top: 50px;
  
     &-div{
+        
         &-input{
             box-sizing: border-box;
             padding: 1.1rem;

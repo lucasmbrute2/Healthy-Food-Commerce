@@ -46,10 +46,10 @@ export default function Register(props){
     
     return(
         <div className='register'>
-                <Link to='/'>
+            <div className='register-container' >
+                <Link to='/' >
                     <i class="fas fa-arrow-left" id='register-back'></i>
                 </Link>
-            <div className='register-container'>
                 <div className='register-container-div'>
                     <div>
                         <form onSubmit={HandleSubmit}>

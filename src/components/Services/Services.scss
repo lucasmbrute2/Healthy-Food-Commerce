@@ -12,14 +12,15 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-
+        
         &-div{
             margin: 150px 160px;
             width: 450px;
+            
             &-h2{
                 color: #2d3561;
                 font-size: 35px;
-                
+                text-align: center;
                 &-p{
                     color:#bcbcbc;
                     @include font-poppins;
@@ -58,6 +59,7 @@
 
                 &-h2{
                     font-size: 25px;
+                    
                     &-p{
                         font-size: 15px;
                     }
@@ -82,8 +84,6 @@
             margin: 0 auto;
             &-h2{
                 text-align: center;
-                display: flex;
-                flex-wrap: wrap;
                 &-p{
                     font-size: 15px;
 

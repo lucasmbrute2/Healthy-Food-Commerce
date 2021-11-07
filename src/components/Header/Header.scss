@@ -144,6 +144,7 @@
 
 .page-container{
     @include container;
+    margin-top: 150px;
     &-div{
         
         &-input{

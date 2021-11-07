@@ -51,47 +51,44 @@ export default function Register(props){
                     <i class="fas fa-arrow-left" id='register-back'></i>
                 </Link>
                 <div className='register-container-div'>
-                    <div>
-                        <form onSubmit={HandleSubmit}>
+                    <form onSubmit={HandleSubmit}>
+                        <div>
+                            <h1 className='register-container-div-h1'>Register</h1>
+                        </div>
+                        <div className='register-container-div-box'>
+                            <input placeholder='Nome'  name='nome' className='register-container-div-box-input' required></input>
+                        </div>    
+                        
+                        <div className='register-container-div-box'>
+                            <input placeholder='Data de Nascimento' required name='nascimento' type='date'className='register-container-div-box-input'></input>
+                        </div>    
+                        
+                        <div className='register-container-div-box'>
+                            <input placeholder='CPF' required name='cpf' className='register-container-div-box-input'></input>
+                        </div>    
+                        
+                        <div className='register-container-div-box'>
+                            <input placeholder='CEP' onBlur={dispatchCep} name='cep' required name='cep' className='register-container-div-box-input'></input>
+                        </div>    
+
+                        <div className='register-container-div-box'>
+                            <input placeholder='Logradouro' value={cepComplete.logradouro} required name='logradouro' className='register-container-div-box-input'></input>
+                        </div>  
+
+                        <div className='register-container-div-box'>
+                            <input placeholder='Complemento'  required name='complemento' className='register-container-div-box-input'></input>
+                        </div>  
+                        <div className='register-container-div-box'>
+                            <input placeholder='Bairro' value={cepComplete.bairro} required name='bairro' className='register-container-div-box-input'></input>
+                        </div>  
+
+                        <div className='register-container-div-box'>
+                            <input placeholder='UF' value={cepComplete.uf} name='uf' className='register-container-div-box-input' required></input>
+                        </div>  
                             <div>
-                                <h1 className='register-container-div-h1'>Register</h1>
+                                <input type='submit'value='Enviar' className='register-container-div-box-input' id='input-submit' required></input>
                             </div>
-                            <div className='register-container-div-box'>
-                                <input placeholder='Nome'  name='nome' className='register-container-div-box-input' required></input>
-                            </div>    
-                            
-                            <div className='register-container-div-box'>
-                                <input placeholder='Data de Nascimento' required name='nascimento' className='register-container-div-box-input'></input>
-                            </div>    
-                            
-                            <div className='register-container-div-box'>
-                                <input placeholder='CPF' required name='cpf' className='register-container-div-box-input'></input>
-                            </div>    
-                            
-                            <div className='register-container-div-box'>
-                                <input placeholder='CEP' onBlur={dispatchCep} name='cep' required name='cep' className='register-container-div-box-input'></input>
-                            </div>    
-
-                            <div className='register-container-div-box'>
-                                <input placeholder='Logradouro' value={cepComplete.logradouro} required name='logradouro' className='register-container-div-box-input'></input>
-                            </div>  
-
-                            <div className='register-container-div-box'>
-                                <input placeholder='Complemento'  required name='complemento' className='register-container-div-box-input'></input>
-                            </div>  
-                            <div className='register-container-div-box'>
-                                <input placeholder='Bairro' value={cepComplete.bairro} required name='bairro' className='register-container-div-box-input'></input>
-                            </div>  
-
-                            <div className='register-container-div-box'>
-                                <input placeholder='UF' value={cepComplete.uf} name='uf' className='register-container-div-box-input' required></input>
-                            </div>  
-                                <div>
-                                    <input type='submit'value='Enviar' className='register-container-div-box-input' id='input-submit' required></input>
-                                </div>
-
-                        </form>
-                    </div>  
+                    </form>
                 </div>  
             </div>
         </div>

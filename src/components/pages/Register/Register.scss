@@ -4,17 +4,15 @@
     background: rgb(186,220,88);
     background: linear-gradient(357deg, rgba(186,220,88,1) 0%, rgba(144,228,110,1) 79%); 
     width: 100%;
+    height: calc(100vh - 53px);
     &-container{
-        display: flex;
 
         &-div{
-            display: block;
-            margin: 30px auto;           
-            border-radius: 30px;
+            display: flex;
+            justify-content: center;
             &-h1{
                 text-align: center;
-                color: #fff;
-                text-shadow: 4px 4px 17px rgba(150, 150, 150, 1);
+                color: #90e46e;
                 margin-top: 0;
 
             }
@@ -28,8 +26,13 @@
                     box-sizing: border-box;
                     border-radius: 5px;
                     border: none;
-                    outline: 2px black;
+                    outline: 2px #000;
                     padding-left: 15px;
+                    background-color: rgba(0, 0, 0, 0.027);
+                
+                    &:focus{
+                        border: 1px solid #000;
+                    }
                 }
             }
         }
@@ -40,13 +43,15 @@
 
 form{
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 35px;
     -webkit-box-shadow: 12px 25px 32px -13px rgba(0,0,0,0.274); 
-    box-shadow: 12px 25px 32px -13px rgba(0, 0, 0, 0.274);
+    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.37);
     width: 400px;
     text-align: center;
-}
+    margin: 30px;
+    background: #fff;
 
+}
 #input-submit{
     margin: 10px 0;
     cursor: pointer;

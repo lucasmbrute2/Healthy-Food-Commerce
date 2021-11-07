@@ -6,7 +6,10 @@
 
     //===ESTILIZAÇÃO DO TÍTULO=====    
     border: 2px solid rgba(255, 255, 255, 0);  //borda utilizada para definir os espaço da div
-    
+    &-div{
+        margin-top: 2rem;
+        @include container;
+    }
     &-title{
         text-align: center;
         

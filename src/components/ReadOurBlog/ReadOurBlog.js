@@ -17,7 +17,7 @@ export default function ReadOurBlog(){
       },
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 4
+        items: 3
       },
       tablet: {
         breakpoint: { max: 1024, min: 464 },
@@ -30,8 +30,8 @@ export default function ReadOurBlog(){
     }
 
     return(
-        <div className='readOurBlog' >
-            <div style={{ marginTop: '2rem' }}>
+        <div className='readOurBlog'>
+            <div className='readOurBlog-div'>
                 <div   div className='readOurBlog-title' >
                         <h2 className='readOurBlog-title-h2'>
                             Read Our Blog
@@ -45,7 +45,7 @@ export default function ReadOurBlog(){
                 responsive={responsive}
                 swipeable={true}
                 draggable={false}
-           
+                infinite={true}
                 
                 >
                 <div className='carousel-div'>

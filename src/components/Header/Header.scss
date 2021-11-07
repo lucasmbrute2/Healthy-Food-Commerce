@@ -28,25 +28,111 @@
 
 //--LISTA DE ITENS--
 
+.icon{
+    position: absolute;
+    right: 1%;
+    height: 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+.hamburguer{
+    top:50%;
+    left: 10%;
+    width: 30px;
+    height: 6px;
+    background-color: #000;
+    transition: .5s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.hamburguer:before{
+    position: absolute;
+    top:-12px;
+    content: '';
+    width: 30px;
+    height: 6px;
+    background-color: #000;
+    transition: .5s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+}
+.hamburguer:after{
+    position: absolute;
+    top:12px;
+    content: '';
+    width: 30px;
+    height: 6px;
+    background-color: #000;
+    transition: .5s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+}
+
 .header-container-list{
-    margin-top: 15px;
+
     &-nav{
         
         &-ul{
             display: flex;
             list-style: none;
             flex-wrap: wrap;
+
         }
     }
 }
-li{
+.responsiveList{
+    position: absolute;
+    list-style: none;
+    width: 550px;
+    background-color: #fff;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    transition: .3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#8fd162;
+
+}
+.icon.iconActive .hamburguer{
+    background: transparent;
+    transition: .3s;
+    box-shadow: 0 2px 5px transparent;
+}
+
+.icon.iconActive .hamburguer::after{
+    top: 0;
+    background: #000;
+    transform: rotate(225deg);
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2)
+}
+
+.icon.iconActive .hamburguer::before{
+    top: 0;
+    background: #000;
+    transform: rotate(135deg);
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2)
+}
+
+.li{
     padding: .9rem 2rem .8rem 2rem;
     font-size: 1.2em;
     color: #fff;
     @include font-poppins;
     font-weight: 500;
 }
-#li-register{
+.li--active{
+    text-shadow: 0px 2px 9px rgba(150, 150, 150, 0.86);
+    padding: .9rem 2rem .8rem 2rem;
+    font-size: 1.2em;
+    color: #fff;
+    @include font-poppins;
+    font-weight: 500;
+}
+
+.li-register{
     color: #badc58;
     background-color: #fff;
     border-radius: 5px;
@@ -58,10 +144,6 @@ li{
 
 .page-container{
     @include container;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
- 
     &-div{
         
         &-input{
@@ -113,7 +195,7 @@ li{
         
 
     }
-    li{
+    .li{
         font-size: 1em;
 
     }    
@@ -124,7 +206,7 @@ li{
         background: url('');
     
     }
-    li{
+    .li{
         color: #000;
     }
 
@@ -147,5 +229,19 @@ li{
         
         width: 100%;
 
+    }
+}
+
+@media(max-width: 1000px){
+    
+    .li{
+        display: none;
+    }
+    .hamburguer{
+        display: block;
+        z-index: 9999;
+    }
+    .responsiveList{
+        width: 100%;
     }
 }

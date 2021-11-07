@@ -15,7 +15,7 @@ export default function BestRecipes(){
             <div className='bestRecipes-container' style={{ margin:'0 auto'}}>
                 <div className='bestRecipes-container-div'>
                     <div className='bestRecipes-container-div-img'>
-                        <img src={food1} alt='Food' className='teste-img'/>
+                        <img src={food1} alt='Food' className='card-img'/>
                     </div>
                     
                     <div className='bestRecipes-container-div-h2'>
@@ -26,7 +26,7 @@ export default function BestRecipes(){
                 
                 <div className='bestRecipes-container-div'>
                     <div className='bestRecipes-container-div-img'>
-                        <img src={food2} alt='Food'/>
+                        <img src={food2} alt='Food' className='card-img'/>
                     </div>
                     
                     <div className='bestRecipes-container-div-h2'>
@@ -37,7 +37,7 @@ export default function BestRecipes(){
                 
                 <div className='bestRecipes-container-div'>
                     <div className='bestRecipes-container-div-img'>
-                        <img src={food3} alt='Food'/>
+                        <img src={food3} alt='Food' className='card-img'/>
                     </div>
                     
                     <div className='bestRecipes-container-div-h2'>
@@ -48,7 +48,7 @@ export default function BestRecipes(){
                 
                 <div className='bestRecipes-container-div'>
                     <div className='bestRecipes-container-div-img'>
-                        <img src={food4} alt='Food'/>
+                        <img src={food4} alt='Food'className='card-img'/>
                     </div>
                     
                     <div className='bestRecipes-container-div-h2'>

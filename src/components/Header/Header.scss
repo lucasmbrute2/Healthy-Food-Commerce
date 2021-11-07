@@ -145,6 +145,7 @@
 .page-container{
     @include container;
     margin-top: 150px;
+    height: 30vh;
     &-div{
         
         &-input{
@@ -244,5 +245,8 @@
     }
     .responsiveList{
         width: 100%;
+    }
+    .header{
+        height: 80vh;
     }
 }

@@ -27,3 +27,9 @@
         display: flex;
     }
 }
+
+@media(max-width: 600px){
+    .footer-container-p{
+        font-size: .8em;
+    }
+}

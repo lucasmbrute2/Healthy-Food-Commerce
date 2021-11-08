@@ -1,7 +1,9 @@
 # Healthy Food e-commerce
 
 Acesse o WebSite clicando [aqui](https://healthy-food-react.herokuapp.com/)
+
 ![Alt text](/src/img/home-healthy.png?raw=true)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
